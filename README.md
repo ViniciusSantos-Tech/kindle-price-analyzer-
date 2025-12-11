@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:000000&height=200&section=header&text=Amazon%20Kindle%20Price%20Tracker&fontSize=45&fontColor=ffffff&animation=fadeIn" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00FFFF,100:000000&height=200&section=header&text=Monitoramento%20De%20Preços%20Amazon&fontSize=45&fontColor=ffffff&animation=fadeIn" />
 </p>
 
 <p align="center">
@@ -10,85 +10,47 @@
 </p>
 
 <h2 align="center">📊 Monitoramento Inteligente de Preços da Amazon</h2>
+Um projeto de aprendizado em automação web com Selenium
 
-**Um projeto de aprendizado em automação web com Selenium**
+# 📝 Descrição do Projeto
+
+## Este projeto é uma aplicação web construída com **Streamlit** que utiliza **Selenium** para realizar a raspagem de dados (web scraping) na Amazon Brasil. O objetivo é buscar um produto especificado pelo usuário e extrair os preços dos primeiros resultados, fornecendo uma análise estatística rápida e a opção de download dos dados.
+
+A ferramenta é útil para monitorar rapidamente a variação de preços e identificar as melhores ofertas para um determinado item na Amazon.
 
 ## 🎯 Por Que Fiz Este Projeto?
 Como desenvolvedor em aprendizado, queria:
 - Aplicar Selenium em um projeto real
 - Entender desafios de web scraping
 - Criar algo útil que poderia evoluir para um monitor de preços
+# Tecnologias
+## ✅Automação & Web Scraping
+- Selenium WebDriver 4.15+: Automação avançada do navegador Chrome
+- CSS Selectors Avançados: Localização robusta de elementos dinâmicos
+- XPath Expressions: Seleção alternativa para elementos complexos
+- WebDriverWait + Expected Conditions: Espera inteligente para carregamento dinâmico
+- ActionChains: Simulação de interações de usuário realistas
 
-## 🛠️ Tecnologias e Abordagem
-- **Selenium WebDriver**: Para automação e coleta de dados
-- **CSS Selectors**: Para localização robusta de elementos
-- **WebDriverWait**: Para lidar com carregamento dinâmico
-- **Estruturas de dados**: Listas e dicionários para organizar informação
+## ✅Desenvolvimento Web & Interface
 
-## 🧠 Principais Aprendizados
-### 1. Timing é Tudo
-Aprendi a diferença entre `time.sleep()` e `WebDriverWait`, 
-e quando usar cada um para evitar `ElementNotInteractableException`.
+- Streamlit 1.28+: Framework para criar aplicações web em Python
+- Session State: Gerenciamento de estado entre interações do usuário
+- Streamlit Components: Botões, inputs, métricas e containers interativos
+- CSS Personalizado: Estilização da interface via markdown HTML
+## ✅Processamento & Análise de Dados
 
-### 2. Scroll Necessário
-Elementos podem estar fora da viewport - precisei implementar 
-`execute_script("scrollIntoView")` antes de interagir.
+- Pandas 2.1.4+: Manipulação e análise estruturada de dados
+- DataFrames: Estruturação tabular dos produtos coletados
+- Operações Vetorizadas: Cálculos eficientes de estatísticas
+- Data Cleaning: Limpeza e transformação de strings para numéricos
 
-### 3. Dados 
-Transformar preços de texto ("R$ 1.599") para números (1599.0)
-foi crucial para possibilitar análise comparativa.
+## ⚙️ Tecnologias Utilizadas
 
-### 4. Estruturação Progressiva
-Comecei com print simples, evolui para listas, depois para 
-dicionários - mostrando crescimento no pensamento de estruturação.
+* **Python 3.x**
+* **Streamlit**: Framework para criação rápida da interface web.
+* **Selenium**: Utilizado para automação do navegador (Chrome) e coleta dos dados na página da Amazon.
+* **datetime** e **time**: Para manipulação de tempo e criação de nomes de arquivos dinâmicos.
 
-## 📊 Funcionalidades Implementadas
-- ✅ Coleta automática dos 5 primeiros resultados  
-- ✅ Conversão de preços para formato numérico  
-- ✅ Identificação do produto mais barato e mais caro  
-- ✅ Cálculo da média dos preços coletados
-- ✅ Cálculo da diferença entre extremos  
-- ✅ Saída formatada e organizada
-## 💾 Exportação Profissional
-- ✅ Geração automática de arquivos CSV
-- ✅ Nomes únicos com timestamp (kindle_precos_YYYYMMDD_HHMMSS.csv)
-- ✅ Formatação correta para Excel/Google Sheets
-- ✅ Codificação UTF-8 para caracteres especiais
-
-## 🚧 Desafios Enfrentados
-- **Amazon muda constantemente**: Classes CSS podem alterar
-- **Elementos dinâmicos**: Precisam de waits específicos
-- **Formatação de preços**: Diferentes formatos (1.599 vs 1,599)
-
-## 🔮 Como Poderia Evoluir
-Este projeto é uma base que poderia se tornar:
-1. **Monitor contínuo**: Rodar automaticamente todo dia
-2. **Alertas**: Notificar quando preço baixar
-3. **Dashboard**: Interface web para visualização
-4. **Multi-mercado**: Comparar com Mercado Livre, Magalu
-
-## 🏆 Habilidades Demonstradas
-- Automação web com Selenium
-- Manipulação de dados em Python
-- Debug e resolução de problemas
-- Organização de código em funções
-- Documentação de projetos
-
-## 💡 Para Iniciantes Como Eu
-Se você tá começando com Selenium, este projeto mostra:
-- Que é possível criar algo funcional rápido
-- Que erros são oportunidades de aprendizado
-- Que tutorial é só ponto de partida
-
----
-
-**Autor**: Vinicius Santos  
-**Objetivo**: Aprendizado prático de Selenium  
-**Status**: Projeto de estudo - aberto a contribuições
-
-### 🔧 Instalação
-
-1. **Clone o repositório:**
-```bash
-git clone https://github.com/seu-usuario/amazon-kindle-tracker.git
-cd amazon-kindle-tracker
+ ## ⚠️ Se o código parar de funcionar, provavelmente as classes (a-price-whole, a-size-base-plus.a-color-base.a-text-normal) da Amazon mudaram.⚠️
+ 
+ ### 🧑‍💻 AutorDesenvolvido por Vinicius Santos - Tech.
